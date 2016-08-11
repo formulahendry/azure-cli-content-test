@@ -1,0 +1,163 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --gateway-name
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the frontend IP configuration.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --private-ip-address
+    summary: Static private IP address to use.
+    description: ''
+  - name: --public-ip-address
+    summary: The name or ID of the public IP address.
+    description: ''
+  - name: --subnet
+    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
+    description: ''
+  - name: --vnet-name
+    summary: The virtual network (VNET) name.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_application-gateway_frontend-ip_create
+  name: az network application-gateway frontend-ip create
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --gateway-name
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the frontend IP configuration.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_application-gateway_frontend-ip_delete
+  name: az network application-gateway frontend-ip delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_application-gateway_frontend-ip_list
+  name: az network application-gateway frontend-ip list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --gateway-name
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the frontend IP configuration.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_application-gateway_frontend-ip_show
+  name: az network application-gateway frontend-ip show
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_network_application-gateway_frontend-ip
+name: az network application-gateway frontend-ip
+description: ''
+summary: ''
+Metadata: {}

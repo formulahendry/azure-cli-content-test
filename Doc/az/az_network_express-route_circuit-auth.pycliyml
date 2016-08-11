@@ -1,0 +1,164 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --circuit-name
+    isRequired: true
+    summary: The name of the express route circuit.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the authorization.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_express-route_circuit-auth_delete
+  name: az network express-route circuit-auth delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --circuit-name
+    isRequired: true
+    summary: The name of the curcuit.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_express-route_circuit-auth_list
+  name: az network express-route circuit-auth list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --circuit-name
+    isRequired: true
+    summary: The name of the express route circuit.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the authorization.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_express-route_circuit-auth_show
+  name: az network express-route circuit-auth show
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --authorization-parameters
+    isRequired: true
+    summary: Parameters supplied to the create/update ExpressRouteCircuitAuthorization operation.
+    description: ''
+  - name: --circuit-name
+    isRequired: true
+    summary: The name of the express route circuit.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the authorization.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --add
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.list key=<value>.'
+    description: ''
+  - name: --remove
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <index>.'
+    description: ''
+  - name: --set
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=value.'
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_express-route_circuit-auth_update
+  name: az network express-route circuit-auth update
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_network_express-route_circuit-auth
+name: az network express-route circuit-auth
+description: ''
+summary: ''
+Metadata: {}

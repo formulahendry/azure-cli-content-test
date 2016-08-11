@@ -1,0 +1,156 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --value
+    isRequired: true
+    summary: The value of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_tag_add-value
+  name: az tag add-value
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_tag_create
+  name: az tag create
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_tag_delete
+  name: az tag delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_tag_list
+  name: az tag list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --value
+    isRequired: true
+    summary: The value of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_tag_remove-value
+  name: az tag remove-value
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_tag
+name: az tag
+description: ''
+summary: ''
+Metadata: {}
