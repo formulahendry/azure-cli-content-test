@@ -1,0 +1,338 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --fail-on-exist
+    summary: Specify whether to throw an exception when the container exists.
+    description: ''
+  - name: --metadata
+    summary: Metadata in semicolon separated key=value pairs.
+    description: ''
+  - name: --public-access
+    summary: 'Possible values include: container, blob.'
+    description: ''
+    parameterValueGroup:
+    - none, container, blob
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_container_create
+  name: az storage container create
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --fail-not-exist
+    summary: Specify whether to throw an exception when the container doesn't exist.
+    description: ''
+  - name: --id
+    summary: Lease ID in GUID format.
+    description: ''
+  - name: --if-modified-since
+    summary: Alter only if modified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --if-unmodified-since
+    summary: Alter only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_container_delete
+  name: az storage container delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --snapshot
+    summary: UTC datetime value which specifies a snapshot.
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_container_exists
+  name: az storage container exists
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --cache-control
+    summary: Response header value for Cache-Control when resource is accessed using this shared access signature.
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --content-disposition
+    summary: Response header value for Content-Disposition when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-encoding
+    summary: Response header value for Content-Encoding when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-language
+    summary: Response header value for Content-Language when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-type
+    summary: Response header value for Content-Type when resource is accessed using this shared access signature.
+    description: ''
+  - name: --expiry
+    summary: Expiration UTC datetime in (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --id
+    summary: A unique value up to 64 characters in length that correlates to a stored access policy. To create a stored access policy, use set_blob_service_properties.
+    description: ''
+  - name: --ip
+    summary: Specifies the IP address or range of IP addresses from which to accept requests.
+    description: ''
+  - name: --permission
+    summary: 'Permissions granted: (r)ead (w)rite (d)elete (l)ist. Can be combined.'
+    description: ''
+  - name: --protocol
+    summary: Specifies the protocol permitted for a request made. The default value is https,http. See Protocol for possible values.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --start
+    summary: Start UTC datetime of SAS token (Y-m-d'T'H:M'Z'). Defaults to time of request.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_container_generate-sas
+  name: az storage container generate-sas
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --include-metadata
+    summary: Specifies that container metadata be returned in the response.
+    description: ''
+  - name: --marker
+    summary: An opaque continuation token. This value can be retrieved from the next_marker field of a previous generator object if num_results was specified and that generator has finished enumerating results. If specified, this generator will begin returning results from the point where the previous generator stopped.
+    description: ''
+  - name: --num-results
+    summary: Specifies the maximum number of containers to return. A single list request may return up to 1000 contianers and potentially a continuation token which should be followed to get additional resutls.
+    description: ''
+  - name: --prefix
+    summary: Filters the results to return only containers whose names begin with the specified prefix.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_container_list
+  name: az storage container list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --id
+    summary: Lease ID in GUID format.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_container_show
+  name: az storage container show
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_storage_container
+name: az storage container
+description: ''
+summary: ''
+Metadata: {}

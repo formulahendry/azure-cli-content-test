@@ -1,0 +1,632 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: Name of existing container.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --delete-snapshots
+    summary: Required if the blob has associated snapshots.
+    description: ''
+  - name: --id
+    summary: Lease ID in GUID format.
+    description: ''
+  - name: --if-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag matches the value specified.
+    description: ''
+  - name: --if-modified-since
+    summary: Alter only if modified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --if-none-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag does not match the value specified. Specify the wildcard character (*) to perform the operation only if the resource does not exist, and fail the operation if it does exist.
+    description: ''
+  - name: --if-unmodified-since
+    summary: Alter only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --snapshot
+    summary: The snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to delete.
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_delete
+  name: az storage blob delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: ''
+    description: ''
+  - name: --download-to
+    isRequired: true
+    summary: The file path to download to.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_download
+  name: az storage blob download
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: ''
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --snapshot
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_exists
+  name: az storage blob exists
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: Name of container.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --cache-control
+    summary: Response header value for Cache-Control when resource is accessed using this shared access signature.
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --content-disposition
+    summary: Response header value for Content-Disposition when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-encoding
+    summary: Response header value for Content-Encoding when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-language
+    summary: Response header value for Content-Language when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-type
+    summary: Response header value for Content-Type when resource is accessed using this shared access signature.
+    description: ''
+  - name: --expiry
+    summary: Expiration UTC datetime in (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --id
+    summary: A unique value up to 64 characters in length that correlates to a stored access policy. To create a stored access policy, use set_blob_service_properties.
+    description: ''
+  - name: --ip
+    summary: Specifies the IP address or range of IP addresses from which to accept requests.
+    description: ''
+  - name: --permission
+    summary: 'Permissions granted: (r)ead (w)rite (d)elete (l)ist. Can be combined.'
+    description: ''
+  - name: --protocol
+    summary: Specifies the protocol permitted for a request made. The default value is https,http. See Protocol for possible values.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --start
+    summary: Start UTC datetime of SAS token (Y-m-d'T'H:M'Z'). Defaults to time of request.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_generate-sas
+  name: az storage blob generate-sas
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: Name of existing container.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --delimiter
+    summary: When the request includes this parameter, the operation returns a BlobPrefix element in the result list that acts as a placeholder for all blobs whose names begin with the same substring up to the appearance of the delimiter character. The delimiter may be a single character or a string.
+    description: ''
+  - name: --include
+    summary: Specifies one or more additional datasets to include in the response.
+    description: ''
+  - name: --marker
+    summary: An opaque continuation token. This value can be retrieved from the next_marker field of a previous generator object if num_results was specified and that generator has finished enumerating results. If specified, this generator will begin returning results from the point where the previous generator stopped.
+    description: ''
+  - name: --num-results
+    summary: Specifies the maximum number of blobs to return, including all BlobPrefix elements. If the request does not specify num_results or specifies a value greater than 5,000, the server will return up to 5,000 items. Setting num_results to a value less than or equal to zero results in error response code 400 (Bad Request).
+    description: ''
+  - name: --prefix
+    summary: Filters the results to return only blobs whose names begin with the specified prefix.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_list
+  name: az storage blob list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: Name of existing container.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --id
+    summary: Lease ID in GUID format.
+    description: ''
+  - name: --if-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag matches the value specified.
+    description: ''
+  - name: --if-modified-since
+    summary: Alter only if modified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --if-none-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag does not match the value specified. Specify the wildcard character (*) to perform the operation only if the resource does not exist, and fail the operation if it does exist.
+    description: ''
+  - name: --if-unmodified-since
+    summary: Alter only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --snapshot
+    summary: The snapshot parameter is an opaque DateTime value that, when present, specifies the blob snapshot to retrieve.
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_show
+  name: az storage blob show
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: Name of existing container.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --id
+    summary: Lease ID in GUID format.
+    description: ''
+  - name: --if-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag matches the value specified.
+    description: ''
+  - name: --if-modified-since
+    summary: Alter only if modified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --if-none-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag does not match the value specified. Specify the wildcard character (*) to perform the operation only if the resource does not exist, and fail the operation if it does exist.
+    description: ''
+  - name: --if-unmodified-since
+    summary: Alter only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --metadata
+    summary: Metadata in semicolon separated key=value pairs.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_snapshot
+  name: az storage blob snapshot
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: Name of existing container.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --content-settings
+    summary: ContentSettings object used to set blob properties.
+    description: ''
+  - name: --id
+    summary: Lease ID in GUID format.
+    description: ''
+  - name: --if-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag matches the value specified.
+    description: ''
+  - name: --if-modified-since
+    summary: Alter only if modified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --if-none-match
+    summary: An ETag value, or the wildcard character (*). Specify this header to perform the operation only if the resource's ETag does not match the value specified. Specify the wildcard character (*) to perform the operation only if the resource does not exist, and fail the operation if it does exist.
+    description: ''
+  - name: --if-unmodified-since
+    summary: Alter only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_update
+  name: az storage blob update
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: ''
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --type -t
+    isRequired: true
+    summary: Type of blob to upload.
+    description: ''
+    parameterValueGroup:
+    - append, page, block
+  - name: --upload-from
+    isRequired: true
+    summary: Local path to upload from.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --content-cache-control
+    summary: ''
+    description: ''
+  - name: --content-disposition
+    summary: ''
+    description: ''
+  - name: --content-encoding
+    summary: ''
+    description: ''
+  - name: --content-language
+    summary: ''
+    description: ''
+  - name: --content-md5
+    summary: ''
+    description: ''
+  - name: --content-type
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_upload
+  name: az storage blob upload
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --container-name -c
+    isRequired: true
+    summary: Name of container.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --protocol
+    summary: 'Protocol to use: ''http'' or ''https''. If not specified, uses the protocol specified when BaseBlobService was initialized.'
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_blob_url
+  name: az storage blob url
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_storage_blob
+name: az storage blob
+description: ''
+summary: ''
+Metadata: {}

@@ -1,0 +1,107 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --object-id
+    isRequired: true
+    summary: Object id to delete service principal information.
+    description: ''
+  - name: --api-version
+    summary: Client Api Version.
+    description: ''
+    defaultValue: 1.6
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_ad_sp_delete
+  name: az ad sp delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --display-name
+    summary: Object's display name or its prefix.
+    description: ''
+  - name: --filter
+    summary: OData filter.
+    description: ''
+  - name: --spn
+    summary: Service principal name.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_ad_sp_list
+  name: az ad sp list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --object-id
+    isRequired: true
+    summary: Object id to get service principal information.
+    description: ''
+  - name: --api-version
+    summary: Client Api Version.
+    description: ''
+    defaultValue: 1.6
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_ad_sp_show
+  name: az ad sp show
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_ad_sp
+name: az ad sp
+description: ''
+summary: ''
+Metadata: {}

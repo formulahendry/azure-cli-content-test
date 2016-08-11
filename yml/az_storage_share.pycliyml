@@ -1,0 +1,463 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --directory-name -d
+    summary: The path to the directory.
+    description: ''
+  - name: --marker
+    summary: An opaque continuation token. This value can be retrieved from the next_marker field of a previous generator object if num_results was specified and that generator has finished enumerating results. If specified, this generator will begin returning results from the point where the previous generator stopped.
+    description: ''
+  - name: --num-results
+    summary: Specifies the maximum number of files to return, including all directory elements. If the request does not specify num_results or specifies a value greater than 5,000, the server will return up to 5,000 items. Setting num_results to a value less than or equal to zero results in error response code 400 (Bad Request).
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_contents
+  name: az storage share contents
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --fail-on-exist
+    summary: Specify whether to throw an exception when the share exists. False by default.
+    description: ''
+  - name: --metadata
+    summary: Metadata in semicolon separated key=value pairs.
+    description: ''
+  - name: --quota
+    summary: Specifies the maximum size of the share, in gigabytes. Must be greater than 0, and less than or equal to 5TB (5120).
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_create
+  name: az storage share create
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --fail-not-exist
+    summary: Specify whether to throw an exception when the share doesn't exist. False by default.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_delete
+  name: az storage share delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_exists
+  name: az storage share exists
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --cache-control
+    summary: Response header value for Cache-Control when resource is accessed using this shared access signature.
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --content-disposition
+    summary: Response header value for Content-Disposition when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-encoding
+    summary: Response header value for Content-Encoding when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-language
+    summary: Response header value for Content-Language when resource is accessed using this shared access signature.
+    description: ''
+  - name: --content-type
+    summary: Response header value for Content-Type when resource is accessed using this shared access signature.
+    description: ''
+  - name: --expiry
+    summary: Expiration UTC datetime in (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --id
+    summary: A unique value up to 64 characters in length that correlates to a stored access policy. To create a stored access policy, use set_file_service_properties.
+    description: ''
+  - name: --ip
+    summary: Specifies the IP address or range of IP addresses from which to accept requests.
+    description: ''
+  - name: --permission
+    summary: 'Permissions granted: (r)ead (w)rite (d)elete (l)ist. Can be combined.'
+    description: ''
+  - name: --protocol
+    summary: Specifies the protocol permitted for a request made. Possible values are both HTTPS and HTTP (https,http) or HTTPS only (https). The default value is https,http. Note that HTTP only is not a permitted value.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --start
+    summary: Start UTC datetime of SAS token (Y-m-d'T'H:M'Z'). Defaults to time of request.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_generate-sas
+  name: az storage share generate-sas
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --include-metadata
+    summary: Specifies that share metadata be returned in the response.
+    description: ''
+  - name: --marker
+    summary: An opaque continuation token. This value can be retrieved from the next_marker field of a previous generator object if num_results was specified and that generator has finished enumerating results. If specified, this generator will begin returning results from the point where the previous generator stopped.
+    description: ''
+  - name: --num-results
+    summary: Specifies the maximum number of shares to return.
+    description: ''
+  - name: --prefix
+    summary: Filters the results to return only shares whose names begin with the specified prefix.
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_list
+  name: az storage share list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_show
+  name: az storage share show
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_stats
+  name: az storage share stats
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The primary resource name.
+    description: ''
+  - name: --quota
+    isRequired: true
+    summary: Specifies the maximum size of the share, in gigabytes. Must be greater than 0, and less than or equal to 5 TB (5120 GB).
+    description: ''
+  - name: --account-key
+    summary: ''
+    description: ''
+  - name: --account-name
+    summary: ''
+    description: ''
+  - name: --connection-string
+    summary: ''
+    description: ''
+  - name: --sas-token
+    summary: ''
+    description: ''
+  - name: --timeout
+    summary: Timeout in seconds.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_storage_share_update
+  name: az storage share update
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: az_storage_share
+name: az storage share
+description: ''
+summary: ''
+Metadata: {}
