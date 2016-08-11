@@ -4,11 +4,11 @@ children:
   parameters:
   - name: --container-name -c
     isRequired: true
-    summary: Name of existing container.
+    summary: The container name.
     description: ''
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The blob name.
     description: ''
   - name: --account-key
     summary: ''
@@ -32,7 +32,7 @@ children:
     summary: Alter only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
     description: ''
   - name: --lease-duration
-    summary: Lease duration. 15-60 seconds or -1 for infinite.
+    summary: Specifies the duration of the lease, in seconds, or negative one (-1) for a lease that never expires. A non-infinite lease can be between 15 and 60 seconds. A lease duration cannot be changed using renew or change. Default is -1 (infinite lease).
     description: ''
     defaultValue: -1
   - name: --proposed-lease-id
@@ -42,7 +42,7 @@ children:
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -55,7 +55,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -71,11 +71,11 @@ children:
   parameters:
   - name: --container-name -c
     isRequired: true
-    summary: Name of existing container.
+    summary: The container name.
     description: ''
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The blob name.
     description: ''
   - name: --account-key
     summary: ''
@@ -99,13 +99,13 @@ children:
     summary: Alter only if unmodified since supplied UTC datetime (Y-m-d'T'H:M'Z').
     description: ''
   - name: --lease-break-period
-    summary: Break period. 15-60 seconds or -1 for infinite.
+    summary: For a break operation, this is the proposed duration of seconds that the lease should continue before it is broken, between 0 and 60 seconds. This break period is only used if it is shorter than the time remaining on the lease. If longer, the time remaining on the lease is used. A new lease will not be available before the break period has expired, but the lease may be held for longer than the break period. If this header does not appear with a break operation, a fixed-duration lease breaks after the remaining lease period elapses, and an infinite lease breaks immediately.
     description: ''
   - name: --sas-token
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -118,7 +118,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -134,15 +134,15 @@ children:
   parameters:
   - name: --container-name -c
     isRequired: true
-    summary: Name of existing container.
+    summary: The container name.
     description: ''
-  - name: --id
+  - name: --lease-id
     isRequired: true
-    summary: Lease ID in GUID format.
+    summary: Required if the blob has an active lease.
     description: ''
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The blob name.
     description: ''
   - name: --proposed-lease-id
     isRequired: true
@@ -173,7 +173,7 @@ children:
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -186,7 +186,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -202,15 +202,15 @@ children:
   parameters:
   - name: --container-name -c
     isRequired: true
-    summary: Name of existing container.
+    summary: The container name.
     description: ''
-  - name: --id
+  - name: --lease-id
     isRequired: true
-    summary: Lease ID in GUID format.
+    summary: Lease ID for active lease.
     description: ''
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The blob name.
     description: ''
   - name: --account-key
     summary: ''
@@ -237,7 +237,7 @@ children:
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -250,7 +250,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -266,15 +266,15 @@ children:
   parameters:
   - name: --container-name -c
     isRequired: true
-    summary: Name of existing container.
+    summary: The container name.
     description: ''
-  - name: --id
+  - name: --lease-id
     isRequired: true
-    summary: Lease ID in GUID format.
+    summary: Lease ID for active lease.
     description: ''
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The blob name.
     description: ''
   - name: --account-key
     summary: ''
@@ -301,7 +301,7 @@ children:
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -314,7 +314,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''

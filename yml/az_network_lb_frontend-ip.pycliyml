@@ -15,7 +15,7 @@ children:
     summary: Name of resource group.
     description: ''
   - name: --private-ip-address
-    summary: Static private IP address to use.
+    summary: Static private IP address to associate with the configuration.
     description: ''
   - name: --public-ip-address
     summary: Name or ID of the existing public IP to associate with the configuration.
@@ -37,7 +37,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -74,7 +74,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -107,7 +107,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -144,7 +144,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -171,7 +171,7 @@ children:
     summary: Name of resource group.
     description: ''
   - name: --private-ip-address
-    summary: Static private IP address to use.
+    summary: Static private IP address to associate with the configuration.
     description: ''
   - name: --public-ip-address
     summary: Name or ID of the existing public IP to associate with the configuration.
@@ -193,7 +193,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''

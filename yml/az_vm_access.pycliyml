@@ -25,7 +25,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -66,7 +66,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -75,7 +75,7 @@ children:
     description: ''
   uid: az_vm_access_reset-windows-admin
   name: az vm access reset-windows-admin
-  description: ''
+  description: Note, this resets the admin's credentials. You can't add a new admin.
   summary: ''
   Metadata: {}
 - examples: []
@@ -109,7 +109,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -118,7 +118,7 @@ children:
     description: ''
   uid: az_vm_access_set-linux-user
   name: az vm access set-linux-user
-  description: ''
+  description: Note, the user will have an admin's priviledge.
   summary: ''
   Metadata: {}
 uid: az_vm_access

@@ -4,11 +4,11 @@ children:
   parameters:
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The directory name.
     description: ''
   - name: --share-name -s
     isRequired: true
-    summary: The name of the file share.
+    summary: The file share name.
     description: ''
   - name: --account-key
     summary: ''
@@ -23,13 +23,13 @@ children:
     summary: Specify whether to throw an exception when the directory exists. False by default.
     description: ''
   - name: --metadata
-    summary: Metadata in semicolon separated key=value pairs.
+    summary: Metadata in space-separated key=value pairs.
     description: ''
   - name: --sas-token
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -42,7 +42,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -58,11 +58,11 @@ children:
   parameters:
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The directory name.
     description: ''
   - name: --share-name -s
     isRequired: true
-    summary: The name of the file share.
+    summary: The file share name.
     description: ''
   - name: --account-key
     summary: ''
@@ -80,7 +80,7 @@ children:
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -93,7 +93,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -109,11 +109,11 @@ children:
   parameters:
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The directory name.
     description: ''
   - name: --share-name -s
     isRequired: true
-    summary: The name of the file share.
+    summary: The file share name.
     description: ''
   - name: --account-key
     summary: ''
@@ -127,6 +127,9 @@ children:
   - name: --sas-token
     summary: ''
     description: ''
+  - name: --timeout
+    summary: Request timeout in seconds. Applies to each call to the service.
+    description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
     description: ''
@@ -138,7 +141,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -154,11 +157,11 @@ children:
   parameters:
   - name: --name -n
     isRequired: true
-    summary: The primary resource name.
+    summary: The directory name.
     description: ''
   - name: --share-name -s
     isRequired: true
-    summary: The name of the file share.
+    summary: The file share name.
     description: ''
   - name: --account-key
     summary: ''
@@ -173,7 +176,7 @@ children:
     summary: ''
     description: ''
   - name: --timeout
-    summary: Timeout in seconds.
+    summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -186,7 +189,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''

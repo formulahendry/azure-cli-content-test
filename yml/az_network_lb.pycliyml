@@ -24,7 +24,7 @@ children:
     summary: Static private IP address to use.
     description: ''
   - name: --public-ip-address
-    summary: Name or ID of the public IP address to use.
+    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
     description: ''
   - name: --public-ip-address-allocation
     summary: Public IP address allocation method.
@@ -36,14 +36,14 @@ children:
     summary: Globally unique DNS Name for the Public IP used to access the Virtual Machine (new public IP only).
     description: ''
   - name: --subnet
-    summary: Name or ID of an existing subnet.
+    summary: Name or ID of the resource.  Creates new by default.  Use "" for none.
     description: ''
   - name: --subnet-address-prefix
     summary: The subnet address prefix in CIDR format (new subnet only).
     description: ''
     defaultValue: 10.0.0.0/24
   - name: --tags
-    summary: Multiple semicolon separated tags in 'key[=value]' format. Omit value to clear tags.
+    summary: Multiple semicolon separated tags in 'key[=value]' format.  Use "" for none.
     description: ''
   - name: --vnet-address-prefix
     summary: The virtual network IP address prefix in CIDR format (new subnet only).
@@ -63,7 +63,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -96,7 +96,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -124,7 +124,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -160,7 +160,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -205,7 +205,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''

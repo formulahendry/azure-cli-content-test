@@ -52,7 +52,7 @@ children:
     parameterValueGroup:
     - default, sourceip, sourceipprotocol
   - name: --probe-name
-    summary: The name of the health probe associated with the rule.
+    summary: ''
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -65,7 +65,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -102,7 +102,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -135,7 +135,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -172,7 +172,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''
@@ -225,7 +225,7 @@ children:
     parameterValueGroup:
     - default, sourceip, sourceipprotocol
   - name: --probe-name
-    summary: The name of the health probe associated with the rule.
+    summary: ''
     description: ''
   - name: --protocol
     summary: ''
@@ -243,7 +243,7 @@ children:
     description: ''
     defaultValue: json
     parameterValueGroup:
-    - json, tsv, list, table
+    - json, tsv, list, table, jsonc
   - name: --query
     summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
     description: ''

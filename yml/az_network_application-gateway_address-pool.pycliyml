@@ -2,16 +2,21 @@ examples: []
 children:
 - examples: []
   parameters:
-  - name: --connection-name
+  - name: --gateway-name
     isRequired: true
-    summary: The virtual network gateway connection reset shared key Name.
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the backend address pool.
     description: ''
   - name: --resource-group -g
     isRequired: true
     summary: Name of resource group.
     description: ''
-  - name: --key-length
-    summary: The virtual network connection reset shared key length.
+  - name: --servers
+    isRequired: true
+    summary: The list of IP addresses or DNS names corresponding to backend servers.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -31,8 +36,45 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: az_network_vpn-connection_shared-key_reset
-  name: az network vpn-connection shared-key reset
+  uid: az_network_application-gateway_address-pool_create
+  name: az network application-gateway address-pool create
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --gateway-name
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the backend address pool.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, tsv, list, table, jsonc
+  - name: --query
+    summary: JMESPath query string. See http://jmespath.org/ for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: az_network_application-gateway_address-pool_delete
+  name: az network application-gateway address-pool delete
   description: ''
   summary: ''
   Metadata: {}
@@ -40,7 +82,7 @@ children:
   parameters:
   - name: --name -n
     isRequired: true
-    summary: The virtual network gateway connection shared key name.
+    summary: The name of the application gateway.
     description: ''
   - name: --resource-group -g
     isRequired: true
@@ -64,23 +106,24 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: az_network_vpn-connection_shared-key_show
-  name: az network vpn-connection shared-key show
+  uid: az_network_application-gateway_address-pool_list
+  name: az network application-gateway address-pool list
   description: ''
   summary: ''
   Metadata: {}
 - examples: []
   parameters:
-  - name: --connection-name
+  - name: --gateway-name
     isRequired: true
-    summary: The virtual network gateway connection name.
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the backend address pool.
     description: ''
   - name: --resource-group -g
     isRequired: true
     summary: Name of resource group.
-    description: ''
-  - name: --value
-    summary: The virtual network connection shared key value.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -100,13 +143,13 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: az_network_vpn-connection_shared-key_update
-  name: az network vpn-connection shared-key update
+  uid: az_network_application-gateway_address-pool_show
+  name: az network application-gateway address-pool show
   description: ''
   summary: ''
   Metadata: {}
-uid: az_network_vpn-connection_shared-key
-name: az network vpn-connection shared-key
+uid: az_network_application-gateway_address-pool
+name: az network application-gateway address-pool
 description: ''
 summary: ''
 Metadata: {}
