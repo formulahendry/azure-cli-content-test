@@ -1,0 +1,235 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --location -l
+    isRequired: true
+    summary: Location.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --tags
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: create
+  name: az resource group create
+  description: ''
+  summary: Create a new resource group.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: delete
+  name: az resource group delete
+  description: ''
+  summary: Delete resource group.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: exists
+  name: az resource group exists
+  description: ''
+  summary: Checks whether resource group exists.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --include-comments
+    summary: Export template with comments.
+    description: ''
+  - name: --include-parameter-default-value
+    summary: Export template parameter with default value.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: export
+  name: az resource group export
+  description: ''
+  summary: Captures a resource group as a template.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --tag
+    summary: A single tag in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az resource group list
+  description: ''
+  summary: List resource groups, optionally filtered by a tag.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: show
+  name: az resource group show
+  description: ''
+  summary: Get a resource group.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --add
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --remove
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+    description: ''
+  - name: --set
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: update
+  name: az resource group update
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: group
+name: az resource group
+description: ''
+summary: Commands to manage resource groups.
+Metadata:
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/dev_20160928/
+  doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/dev_20160928/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/commit/da813edf9829dd6f3aa6282f907306219eb1fda3

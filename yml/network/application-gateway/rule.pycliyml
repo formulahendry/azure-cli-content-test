@@ -1,0 +1,174 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --address-pool
+    isRequired: true
+    summary: The name or ID of the backend address pool.
+    description: ''
+  - name: --gateway-name
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --http-listener
+    isRequired: true
+    summary: The name or ID of the HTTP listener.
+    description: ''
+  - name: --http-settings
+    isRequired: true
+    summary: The name or ID of the backend HTTP settings.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the request routing rule.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --rule-type
+    summary: The rule type (Basic, PathBasedRouting).
+    description: ''
+    defaultValue: Basic
+  - name: --url-path-map
+    summary: The name or ID of the URL path map.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: create
+  name: az network application-gateway rule create
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --gateway-name
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the request routing rule.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: delete
+  name: az network application-gateway rule delete
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az network application-gateway rule list
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --gateway-name
+    isRequired: true
+    summary: The name of the application gateway.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: The name of the request routing rule.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: show
+  name: az network application-gateway rule show
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: rule
+name: az network application-gateway rule
+description: ''
+summary: Evaluate probe information and define routing rules.
+Metadata:
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/dev_20160928/
+  doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/dev_20160928/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/commit/da813edf9829dd6f3aa6282f907306219eb1fda3

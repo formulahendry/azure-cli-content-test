@@ -1,0 +1,219 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --authorization-key
+    isRequired: true
+    summary: Authorization key.
+    description: ''
+  - name: --circuit-name
+    isRequired: true
+    summary: Circuit name.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: Authorization name.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: create
+  name: az network express-route circuit-auth create
+  description: ''
+  summary: ''
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --circuit-name
+    summary: Circuit name.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Authorization name.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: delete
+  name: az network express-route circuit-auth delete
+  description: ''
+  summary: >-
+    The delete authorization operation deletes the specified authorization
+
+    from the specified ExpressRouteCircuit.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --circuit-name
+    summary: Circuit name.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az network express-route circuit-auth list
+  description: ''
+  summary: >-
+    The List authorization operation retrieves all the authorizations in
+
+    an ExpressRouteCircuit.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --circuit-name
+    summary: Circuit name.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Authorization name.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: show
+  name: az network express-route circuit-auth show
+  description: ''
+  summary: >-
+    The GET authorization operation retrieves the specified authorization
+
+    from the specified ExpressRouteCircuit.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --authorization-parameters
+    isRequired: true
+    summary: Parameters supplied to the create/update ExpressRouteCircuitAuthorization operation.
+    description: ''
+  - name: --add
+    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
+    description: ''
+  - name: --remove
+    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
+    description: ''
+  - name: --set
+    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
+    description: ''
+  - name: --circuit-name
+    summary: Circuit name.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Authorization name.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: update
+  name: az network express-route circuit-auth update
+  description: ''
+  summary: ''
+  Metadata: {}
+uid: circuit-auth
+name: az network express-route circuit-auth
+description: ''
+summary: Manage express route circuit authentication.
+Metadata:
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/dev_20160928/
+  doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/dev_20160928/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/commit/da813edf9829dd6f3aa6282f907306219eb1fda3

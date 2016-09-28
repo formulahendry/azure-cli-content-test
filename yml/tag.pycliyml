@@ -1,0 +1,160 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --value
+    isRequired: true
+    summary: The value of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: add-value
+  name: az tag add-value
+  description: ''
+  summary: Create a subscription resource tag value.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: create
+  name: az tag create
+  description: ''
+  summary: Create a subscription resource tag.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: delete
+  name: az tag delete
+  description: ''
+  summary: Delete a subscription resource tag.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az tag list
+  description: ''
+  summary: Get a list of subscription resource tags.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the tag.
+    description: ''
+  - name: --value
+    isRequired: true
+    summary: The value of the tag.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: remove-value
+  name: az tag remove-value
+  description: ''
+  summary: Delete a subscription resource tag value.
+  Metadata: {}
+uid: tag
+name: az tag
+description: ''
+summary: Manage resource tags.
+Metadata:
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/dev_20160928/
+  doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/dev_20160928/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/commit/da813edf9829dd6f3aa6282f907306219eb1fda3

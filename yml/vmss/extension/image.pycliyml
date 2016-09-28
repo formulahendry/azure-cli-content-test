@@ -1,0 +1,174 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --image-location
+    summary: Image location.
+    description: ''
+  - name: --latest
+    summary: Show the latest version only.
+    description: ''
+  - name: --publisher
+    summary: Image publisher name.
+    description: ''
+  - name: --version
+    summary: Extension version.
+    description: ''
+  - name: --ids
+    summary: One or more resource IDs. If provided, no other 'Resource Id' arguments should be specified.
+    description: ''
+  - name: --name -n
+    summary: Scale set name.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az vmss extension image list
+  description: ''
+  summary: Vm extension image list.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --location -l
+    isRequired: true
+    summary: Location.
+    description: ''
+  - name: --publisher
+    isRequired: true
+    summary: Image publisher name.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list-names
+  name: az vmss extension image list-names
+  description: ''
+  summary: Gets a list of virtual machine extension image types.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --location -l
+    isRequired: true
+    summary: Location.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: Extension name.
+    description: ''
+  - name: --publisher
+    isRequired: true
+    summary: Image publisher name.
+    description: ''
+  - name: --filter
+    summary: The filter to apply on the operation.
+    description: ''
+  - name: --orderby
+    summary: The sort to apply on the operation.
+    description: ''
+  - name: --top
+    summary: Return top number of records.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list-versions
+  name: az vmss extension image list-versions
+  description: ''
+  summary: Gets a list of virtual machine extension image versions.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --location -l
+    isRequired: true
+    summary: Location.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: Extension name.
+    description: ''
+  - name: --publisher
+    isRequired: true
+    summary: Image publisher name.
+    description: ''
+  - name: --version
+    isRequired: true
+    summary: Extension version.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: show
+  name: az vmss extension image show
+  description: ''
+  summary: Gets a virtual machine extension image.
+  Metadata: {}
+uid: image
+name: az vmss extension image
+description: ''
+summary: Find scale-set extensions available for your subscription and region.
+Metadata:
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/dev_20160928/
+  doc_source_url_path: src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/dev_20160928/src/command_modules/azure-cli-vm/azure/cli/command_modules/vm/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/commit/98e206c7440673394ba813b83b289e1d1d14cd88
