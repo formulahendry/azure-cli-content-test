@@ -36,6 +36,14 @@ children:
     code: az ad sp create-for-rbac -n "http://my-app"
   - title: Create role assignments at the same time
     code: az ad sp create-for-rbac -n "http://my-app" --role contributor --scopes /subscriptions/11111111-2222-3333-4444-555555555555/resourceGroups/mygroup /subscriptions/11111111-2222-3333-4444-666666666666/resourceGroups/my-another-group
+  - title: Login with this service principal
+    code: az login --service-principal -u <sp_name> -p <client_secret> --tenant <tenant>
+  - title: Reset credentials on expiration
+    code: az ad sp reset-credentials --name <sp_name>
+  - title: Create role assignments
+    code: az role assignment create --assignee <sp_name> --role Contributor
+  - title: Revoke the service principal when done with it
+    code: az ad app delete --id <sp_name>
   parameters:
   - name: --name -n
     summary: An unique uri. If missing, the command will generate one.
@@ -209,7 +217,9 @@ name: az ad sp
 description: ''
 summary: Manages AAD service principals for automation authentication.
 Metadata:
-  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test2/
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test_message/
   doc_source_url_path: src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test2/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
-  gitcommit: https://github.com/formulahendry/azure-cli/commit/90c7b7de3159e41160c96dbaffd13f94e20c3874
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test_message/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/blob/d8a031e4295508edf760b526f44cba174cbc31a8/src/command_modules/azure-cli-role/azure/cli/command_modules/role/_help.py
+  updated_at: 10/20/2016 2:17:49 AM
+  ms.date: 10/20/2016

@@ -1,0 +1,260 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of the key.
+    description: ''
+  - name: --protection -p
+    isRequired: true
+    summary: Specifies the type of key protection.
+    description: ''
+    parameterValueGroup:
+    - hsm, software
+  - name: --vault-name
+    isRequired: true
+    summary: Name of the key vault.
+    description: ''
+  - name: --disabled
+    summary: Create key in disabled state.
+    description: ''
+  - name: --expires
+    summary: Expiration UTC datetime  (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --not-before
+    summary: Key not usable before the provided UTC datetime  (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --ops
+    summary: 'Space separated list of permitted JSON web key operations. Possible values: encrypt, decrypt, sign, verify, wrapKey, unwrapKey.'
+    description: ''
+  - name: --size
+    summary: The key size in bytes. e.g. 1024 or 2048.
+    description: ''
+  - name: --tags
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: create
+  name: az keyvault key create
+  description: ''
+  summary: Creates a new, named, key in the specified vault.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of the key.
+    description: ''
+  - name: --vault-name
+    isRequired: true
+    summary: Name of the key vault.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: delete
+  name: az keyvault key delete
+  description: ''
+  summary: Deletes the specified key.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --vault-name
+    isRequired: true
+    summary: Name of the key vault.
+    description: ''
+  - name: --maxresults
+    summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az keyvault key list
+  description: ''
+  summary: List keys in the specified vault.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of the key.
+    description: ''
+  - name: --vault-name
+    isRequired: true
+    summary: Name of the key vault.
+    description: ''
+  - name: --maxresults
+    summary: Maximum number of results to return in a page. If not specified the service will return up to 25 results.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list-versions
+  name: az keyvault key list-versions
+  description: ''
+  summary: List the versions of the specified key.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of the key.
+    description: ''
+  - name: --vault-name
+    isRequired: true
+    summary: Name of the key vault.
+    description: ''
+  - name: --enabled
+    summary: Enable the key.
+    description: ''
+    parameterValueGroup:
+    - false, true
+  - name: --expires
+    summary: Expiration UTC datetime  (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --not-before
+    summary: Key not usable before the provided UTC datetime  (Y-m-d'T'H:M'Z').
+    description: ''
+  - name: --ops
+    summary: 'Space separated list of permitted JSON web key operations. Possible values: encrypt, decrypt, sign, verify, wrapKey, unwrapKey.'
+    description: ''
+  - name: --tags
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --version -v
+    summary: The key version. If omitted, uses the latest version.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: set-attributes
+  name: az keyvault key set-attributes
+  description: ''
+  summary: Updates the Key Attributes associated with the specified key.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of the key.
+    description: ''
+  - name: --vault-name
+    isRequired: true
+    summary: Name of the key vault.
+    description: ''
+  - name: --version -v
+    summary: The key version. If omitted, uses the latest version.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: show
+  name: az keyvault key show
+  description: ''
+  summary: Retrieves the public portion of a key plus its attributes.
+  Metadata: {}
+uid: key
+name: az keyvault key
+description: ''
+summary: ''
+Metadata:
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test_message/
+  doc_source_url_path: src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test_message/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/blob/d72cfaa7f2f24a96d5a0e1c5da5f6d00c0ed8467/src/command_modules/azure-cli-keyvault/azure/cli/command_modules/keyvault/_help.py
+  updated_at: 10/10/2016 8:18:52 PM
+  ms.date: 10/10/2016

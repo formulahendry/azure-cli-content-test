@@ -1,0 +1,125 @@
+examples: []
+children:
+- examples: []
+  parameters:
+  - name: --expand
+    summary: The $expand query parameter. e.g. To include property aliases in response, use $expand=resourceTypes/aliases.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az provider list
+  description: ''
+  summary: Gets a list of resource providers.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --namespace -n
+    isRequired: true
+    summary: The resource namespace, aka 'provider'.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: register
+  name: az provider register
+  description: ''
+  summary: Register a provider.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --namespace -n
+    isRequired: true
+    summary: The resource namespace, aka 'provider'.
+    description: ''
+  - name: --expand
+    summary: The $expand query parameter. e.g. To include property aliases in response, use $expand=resourceTypes/aliases.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: show
+  name: az provider show
+  description: ''
+  summary: Gets a resource provider.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --namespace -n
+    isRequired: true
+    summary: The resource namespace, aka 'provider'.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: unregister
+  name: az provider unregister
+  description: ''
+  summary: Unregister a provider.
+  Metadata: {}
+uid: provider
+name: az provider
+description: ''
+summary: Manage resource providers.
+Metadata: {}

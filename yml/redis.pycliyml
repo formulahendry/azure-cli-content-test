@@ -25,13 +25,13 @@ children:
     summary: ''
     description: ''
     parameterValueGroup:
-    - c, p
+    - C, P
   - name: --sku-name
     isRequired: true
     summary: ''
     description: ''
     parameterValueGroup:
-    - basic, premium, standard
+    - Basic, Premium, Standard
   - name: --enable-non-ssl-port
     summary: If the value is true, then the non-ssl redis server port (6379) will be enabled.
     description: ''
@@ -161,6 +161,8 @@ children:
     isRequired: true
     summary: Which redis node(s) to reboot. Depending on this value data loss is possible.
     description: ''
+    parameterValueGroup:
+    - AllNodes, PrimaryNode, SecondaryNode
   - name: --shard-id
     summary: In case of cluster cache, this specifies shard id which should be rebooted.
     description: ''
@@ -443,7 +445,9 @@ name: az redis
 description: ''
 summary: Access to a secure, dedicated cache for your Azure applications.
 Metadata:
-  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test2/
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test_message/
   doc_source_url_path: src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
-  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test2/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
-  gitcommit: https://github.com/formulahendry/azure-cli/commit/90c7b7de3159e41160c96dbaffd13f94e20c3874
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test_message/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/blob/097931a17e73471b54e2360fdc19db719889f0af/src/command_modules/azure-cli-redis/azure/cli/command_modules/redis/_help.py
+  updated_at: 9/20/2016 7:43:34 PM
+  ms.date: 9/20/2016

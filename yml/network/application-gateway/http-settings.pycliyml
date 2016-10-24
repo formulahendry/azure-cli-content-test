@@ -21,6 +21,8 @@ children:
   - name: --cookie-based-affinity
     summary: Enable or disable cookie based affinity. (Enabled, Disabled).
     description: ''
+    parameterValueGroup:
+    - Disabled, Enabled
   - name: --probe
     summary: Name or ID of the probe to associatie with the HTTP settings.
     description: ''
@@ -28,6 +30,8 @@ children:
     summary: The HTTP settings protocol. (http, https).
     description: ''
     defaultValue: http
+    parameterValueGroup:
+    - Http, Https
   - name: --timeout
     summary: Request timeout in seconds.
     description: ''
@@ -166,7 +170,9 @@ name: az network application-gateway http-settings
 description: ''
 summary: Manage application gateway HTTP settings.
 Metadata:
-  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test2/
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test_message/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test2/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  gitcommit: https://github.com/formulahendry/azure-cli/commit/90c7b7de3159e41160c96dbaffd13f94e20c3874
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test_message/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/blob/097931a17e73471b54e2360fdc19db719889f0af/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  updated_at: 9/20/2016 7:43:34 PM
+  ms.date: 9/20/2016

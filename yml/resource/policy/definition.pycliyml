@@ -1,9 +1,90 @@
 examples: []
 children:
+- examples:
+  - title: Create a policy with following rules
+    code: >-
+      {
+          "if":
+          {
+              "source": "action",
+              "equals": "Microsoft.Storage/storageAccounts/write"
+          },
+          "then":
+          {
+              "effect": "deny"
+          }
+      }
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of the new policy definition.
+    description: ''
+  - name: --rules
+    isRequired: true
+    summary: JSON formatted string or a path to a file with such content.
+    description: ''
+  - name: --description
+    summary: Description of policy definition.
+    description: ''
+  - name: --display-name
+    summary: Display name of policy definition.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: create
+  name: az resource policy definition create
+  description: ''
+  summary: Creates a policy definition.
+  Metadata: {}
 - examples: []
   parameters:
-  - name: --expand
-    summary: The $expand query parameter. e.g. To include property aliases in response, use $expand=resourceTypes/aliases.
+  - name: --name -n
+    isRequired: true
+    summary: The policy definition name.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: delete
+  name: az resource policy definition delete
+  description: ''
+  summary: Deletes a policy definition.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --filter
+    summary: The filter to apply on the operation.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -24,47 +105,15 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   uid: list
-  name: az resource provider list
+  name: az resource policy definition list
   description: ''
-  summary: Gets a list of resource providers.
+  summary: Lists policy definitions.
   Metadata: {}
 - examples: []
   parameters:
-  - name: --namespace -n
+  - name: --name -n
     isRequired: true
-    summary: The resource namespace, aka 'provider'.
-    description: ''
-  - name: --debug
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup:
-    - json, jsonc, list, table, tsv
-  - name: --query
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  uid: register
-  name: az resource provider register
-  description: ''
-  summary: ''
-  Metadata: {}
-- examples: []
-  parameters:
-  - name: --namespace -n
-    isRequired: true
-    summary: The resource namespace, aka 'provider'.
-    description: ''
-  - name: --expand
-    summary: The $expand query parameter. e.g. To include property aliases in response, use $expand=resourceTypes/aliases.
+    summary: The policy definition name.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -85,15 +134,24 @@ children:
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
   uid: show
-  name: az resource provider show
+  name: az resource policy definition show
   description: ''
-  summary: Gets a resource provider.
+  summary: Gets the policy definition.
   Metadata: {}
 - examples: []
   parameters:
-  - name: --namespace -n
+  - name: --name -n
     isRequired: true
-    summary: The resource namespace, aka 'provider'.
+    summary: The policy definition name.
+    description: ''
+  - name: --description
+    summary: Description of policy definition.
+    description: ''
+  - name: --display-name
+    summary: Display name of policy definition.
+    description: ''
+  - name: --rules
+    summary: JSON formatted string or a path to a file with such content.
     description: ''
   - name: --debug
     summary: Increase logging verbosity to show all debug logs.
@@ -113,17 +171,19 @@ children:
   - name: --verbose
     summary: Increase logging verbosity. Use --debug for full debug logs.
     description: ''
-  uid: unregister
-  name: az resource provider unregister
+  uid: update
+  name: az resource policy definition update
   description: ''
-  summary: ''
+  summary: Updates a policy definition.
   Metadata: {}
-uid: provider
-name: az resource provider
+uid: definition
+name: az resource policy definition
 description: ''
-summary: Commands to manage resource providers.
+summary: Manage resource policy definitions.
 Metadata:
-  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test2/
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test_message/
   doc_source_url_path: src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test2/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
-  gitcommit: https://github.com/formulahendry/azure-cli/commit/90c7b7de3159e41160c96dbaffd13f94e20c3874
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test_message/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/blob/98aae45754eec14c600e9f8c5e0704062e79767b/src/command_modules/azure-cli-resource/azure/cli/command_modules/resource/_help.py
+  updated_at: 10/13/2016 11:09:47 PM
+  ms.date: 10/13/2016

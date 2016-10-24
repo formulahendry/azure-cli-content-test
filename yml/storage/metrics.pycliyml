@@ -64,17 +64,17 @@ children:
     summary: Specify whether to include API in metrics. Applies to both hour and minute metrics if both are specified. Must be specified if hour or minute metrics are enabled and being updated.
     description: ''
     parameterValueGroup:
-    - disable, enable
+    - false, true
   - name: --hour
     summary: Update the hourly metrics.
     description: ''
     parameterValueGroup:
-    - disable, enable
+    - false, true
   - name: --minute
     summary: Update the by-minute metrics.
     description: ''
     parameterValueGroup:
-    - disable, enable
+    - false, true
   - name: --timeout
     summary: Request timeout in seconds. Applies to each call to the service.
     description: ''
@@ -118,7 +118,9 @@ name: az storage metrics
 description: ''
 summary: Commands to manage your Storage metrics properties.
 Metadata:
-  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test2/
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test_message/
   doc_source_url_path: src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test2/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
-  gitcommit: https://github.com/formulahendry/azure-cli/commit/90c7b7de3159e41160c96dbaffd13f94e20c3874
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test_message/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/blob/097931a17e73471b54e2360fdc19db719889f0af/src/command_modules/azure-cli-storage/azure/cli/command_modules/storage/_help.py
+  updated_at: 9/20/2016 7:43:34 PM
+  ms.date: 9/20/2016

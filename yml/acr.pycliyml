@@ -1,0 +1,198 @@
+examples: []
+children:
+- examples:
+  - title: Create a container registry with a new storage account
+    code: az acr create -n myRegistry -g myResourceGroup -l southus
+  - title: Create a container registry with an existing storage account
+    code: az acr create -n myRegistry -g myResourceGroup -l southus -s myStorageAccount
+  parameters:
+  - name: --location -l
+    isRequired: true
+    summary: Location.
+    description: ''
+  - name: --name -n
+    isRequired: true
+    summary: Name of container registry.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --enable-admin
+    summary: Enable admin user.
+    description: ''
+  - name: --storage-account-name -s
+    summary: Name of an existing storage account.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: create
+  name: az acr create
+  description: ''
+  summary: Create a container registry.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of container registry.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: delete
+  name: az acr delete
+  description: ''
+  summary: Delete a container registry.
+  Metadata: {}
+- examples:
+  - title: List container registries and show result in a table
+    code: az acr list -o table
+  - title: List container registries in a resource group and show result in a table
+    code: az acr list -g myResourceGroup -o table
+  parameters:
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: list
+  name: az acr list
+  description: ''
+  summary: List container registries.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of container registry.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: show
+  name: az acr show
+  description: ''
+  summary: Get a container registry.
+  Metadata: {}
+- examples:
+  - title: Update tags for a container registry
+    code: az acr update -n myRegistry --tags key1=value1 key2=value2
+  - title: Enable admin user for a container registry
+    code: az acr update -n myRegistry --enable-admin
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: Name of container registry.
+    description: ''
+  - name: --disable-admin
+    summary: Disable admin user.
+    description: ''
+  - name: --enable-admin
+    summary: Enable admin user.
+    description: ''
+  - name: --resource-group -g
+    summary: Name of resource group.
+    description: ''
+  - name: --tags
+    summary: Space separated tags in 'key[=value]' format. Use "" to clear existing tags.
+    description: ''
+  - name: --tenant-id -t
+    summary: 'Tenant id for service principal login. Warning: Changing tenant id will invalidate assigned access of existing service principals.'
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: update
+  name: az acr update
+  description: ''
+  summary: Update a container registry.
+  Metadata: {}
+uid: acr
+name: az acr
+description: ''
+summary: Commands to manage Azure container registries.
+Metadata: {}
