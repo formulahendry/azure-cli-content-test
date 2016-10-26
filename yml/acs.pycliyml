@@ -2,7 +2,7 @@ examples: []
 children:
 - examples: []
   parameters:
-  - name: --dns-name-prefix
+  - name: --dns-prefix -d
     isRequired: true
     summary: Sets the Domain name prefix for the cluster. The concatenation of the domain name and the regionalized DNS zone make up the fully qualified domain name associated with the public IP address.
     description: ''
@@ -17,7 +17,7 @@ children:
   - name: --admin-username
     summary: User name for the Linux Virtual Machines.
     description: ''
-    defaultValue: appveyor
+    defaultValue: azureuser
   - name: --agent-count
     summary: The number of agents for the cluster.  Note, for DC/OS clusters you will also get 1 or 2 public agents in addition to these seleted masters.
     description: ''
@@ -140,6 +140,43 @@ children:
     isRequired: true
     summary: The name of the container service.
     description: ''
+  - name: --new-agent-count
+    isRequired: true
+    summary: The number of agents for the cluster.
+    description: ''
+  - name: --resource-group -g
+    isRequired: true
+    summary: Name of resource group.
+    description: ''
+  - name: --debug
+    summary: Increase logging verbosity to show all debug logs.
+    description: ''
+  - name: --help -h
+    summary: Show this help message and exit.
+    description: ''
+  - name: --output -o
+    summary: Output format.
+    description: ''
+    defaultValue: json
+    parameterValueGroup:
+    - json, jsonc, list, table, tsv
+  - name: --query
+    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
+    description: ''
+  - name: --verbose
+    summary: Increase logging verbosity. Use --debug for full debug logs.
+    description: ''
+  uid: scale
+  name: az acs scale
+  description: ''
+  summary: Change private agent count of a container service.
+  Metadata: {}
+- examples: []
+  parameters:
+  - name: --name -n
+    isRequired: true
+    summary: The name of the container service.
+    description: ''
   - name: --resource-group -g
     isRequired: true
     summary: Name of resource group.
@@ -167,54 +204,14 @@ children:
   description: ''
   summary: Show a container service.
   Metadata: {}
-- examples: []
-  parameters:
-  - name: --agent-count
-    isRequired: true
-    summary: The number of agents for the cluster.
-    description: ''
-  - name: --name -n
-    isRequired: true
-    summary: The name of the container service.
-    description: ''
-  - name: --resource-group -g
-    isRequired: true
-    summary: Name of resource group.
-    description: ''
-  - name: --add
-    summary: 'Add an object to a list of objects by specifying a path and key value pairs.  Example: --add property.listProperty <key=value, string or JSON string>.'
-    description: ''
-  - name: --remove
-    summary: 'Remove a property or an element from a list.  Example: --remove property.list <indexToRemove> OR --remove propertyToRemove.'
-    description: ''
-  - name: --set
-    summary: 'Update an object by specifying a property path and value to set.  Example: --set property1.property2=<value>.'
-    description: ''
-  - name: --debug
-    summary: Increase logging verbosity to show all debug logs.
-    description: ''
-  - name: --help -h
-    summary: Show this help message and exit.
-    description: ''
-  - name: --output -o
-    summary: Output format.
-    description: ''
-    defaultValue: json
-    parameterValueGroup:
-    - json, jsonc, list, table, tsv
-  - name: --query
-    summary: JMESPath query string. See <a href="http://jmespath.org/">http://jmespath.org/</a> for more information and examples.
-    description: ''
-  - name: --verbose
-    summary: Increase logging verbosity. Use --debug for full debug logs.
-    description: ''
-  uid: update
-  name: az acs update
-  description: ''
-  summary: Update a container service such as adding more private agents, etc.
-  Metadata: {}
 uid: acs
 name: az acs
 description: ''
 summary: Manage Azure container services.
-Metadata: {}
+Metadata:
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/doc_ci_vsts/
+  doc_source_url_path: src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/doc_ci_vsts/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+  gitcommit: https://github.com/formulahendry/azure-cli/blob/de089bf13cda1c272d7603f667ad8b2e3bafb77f/src/command_modules/azure-cli-acs/azure/cli/command_modules/acs/_help.py
+  updated_at: 10/21/2016 9:29:29 PM
+  ms.date: 10/21/2016

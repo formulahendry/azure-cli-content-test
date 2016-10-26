@@ -263,9 +263,9 @@ name: az network dns zone
 description: ''
 summary: Manage DNS zones.
 Metadata:
-  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/test_message/
+  doc_source_url_repo: https://github.com/formulahendry/azure-cli/blob/doc_ci_vsts/
   doc_source_url_path: src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
-  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/test_message/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
+  original_content_git_url: https://github.com/formulahendry/azure-cli/blob/doc_ci_vsts/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   gitcommit: https://github.com/formulahendry/azure-cli/blob/097931a17e73471b54e2360fdc19db719889f0af/src/command_modules/azure-cli-network/azure/cli/command_modules/network/_help.py
   updated_at: 9/20/2016 7:43:34 PM
   ms.date: 9/20/2016
