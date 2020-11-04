@@ -12,7 +12,7 @@ jobs:
         issue-message: 'Message that will be displayed on users'' first issue'
         pr-message: 'Message that will be displayed on users'' first pr'
     - name: Set selected color
-      run: echo '::set-output name=SELECTED_COLOR::green'
+      run: echo '::set-output name=SELECTED_COLOR::red'
       id: random-color-generator
     - name: Get color
       run: echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
